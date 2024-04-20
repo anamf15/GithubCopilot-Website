@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .header a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .grid-item {
+            margin: 10px;
+            position: relative;
+        }
+        .grid-item img {
+            width: 200px;
+            height: 200px;
+        }
+        .grid-item .description {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+        }
+        .grid-item:hover .description {
+            display: block;
+        }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Brands</a>
+        <a href="#">Offers</a>
+    </div>
+    <div class="grid">
+        <div class="grid-item">
+            <img src="product1.jpg" alt="Product 1">
+            <div class="description">Product 1 description</div>
+        </div>
+        <!-- Repeat for more products -->
+    </div>
+    <div class="footer">
+        &copy; 2022 Sephora
+    </div>
+</body>
+</html>
